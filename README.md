@@ -2,6 +2,8 @@
 
 ## Demo
 
+[Example Site](https://nightswinger.github.io/hugo-theme-coyote/)
+
 ## Install
 
 Clone this repo to `themes` folder:
