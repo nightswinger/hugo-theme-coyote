@@ -17,7 +17,7 @@ const fuseOptions = {
 }
 
 window.onload = function () {
-  fetch('/index.json')
+  fetch('../index.json')
     .then(resp => resp.json())
     .then(data => {
       fuse = new Fuse(data, fuseOptions)
