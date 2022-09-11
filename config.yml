@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: "https://nightswinger.github.io/hugo-theme-coyote/"
 title: COYOTE
 paginate: 9
 theme: coyote
