@@ -1,0 +1,14 @@
+baseURL: 'http://example.org/'
+title: COYOTE
+paginate: 9
+theme: coyote
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: search/
+outputs:
+    home:
+        - HTML
+        - JSON

@@ -1,0 +1,3 @@
+[submodule "themes/coyote"]
+	path = themes/coyote
+	url = https://github.com/nightswinger/hugo-theme-coyote.git
