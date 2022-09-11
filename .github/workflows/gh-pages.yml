@@ -6,7 +6,7 @@ on:
       - exampleSite
   workflow_dispatch:
 
-job:
+jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
