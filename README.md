@@ -1,0 +1,17 @@
+# Hugo Theme Coyote
+
+## Demo
+
+## Install
+
+Clone this repo to `themes` folder:
+
+```bash
+git clone https://github.com/nightswinger/hugo-theme-coyote.git themes/coyote --depth=1
+```
+
+Then, add the theme to your site config:
+
+```bash
+echo theme = \"coyote\" >> config.toml
+```
