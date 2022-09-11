@@ -3,6 +3,7 @@ name: Deploy Hugo Demo Site to Github Pages
 on:
   push:
     branches:
+      - main
       - exampleSite
   workflow_dispatch:
 
