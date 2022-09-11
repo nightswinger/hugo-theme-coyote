@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="post">
+  <div class="post__header">
+    {{ $image := .Resources.GetMatch .Params.image }}
+    <img class="post__image" src="{{ $image.RelPermalink }}">
+  </div>
+
+  {{ with .Params.tags }}
+  <div class="post__tags">
+    {{ range . }}
+      <a class="post__tag" href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <section class="post__content">
+    <h1 id="title">{{ .Title }}</h1>
+    <div>
+      <article>
+          {{ .Content }}
+      </article>
+    </div>
+  </section>
+</div>
+{{ end }}

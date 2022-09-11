@@ -1,0 +1,12 @@
+<div class="pagination">
+  {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{- $paginator := .Paginate $pages }}
+
+  {{ range $paginator.Pagers }}
+    <div class="pagination__item">
+      <a class="pagination__link{{ if eq . $paginator }} pagination__link--current{{ end }}" href="{{ .URL }}" >
+        {{ .PageNumber }}
+      </a>
+    </div>
+  {{ end }}
+</div>

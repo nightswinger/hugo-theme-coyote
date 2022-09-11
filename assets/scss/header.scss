@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
+  padding: 0 1.6rem;
+
+  &__title {
+    font-size: 2.8rem;
+    font-family: 'Eczar', serif;
+    margin: 10px 0;
+  }
+}
+
+.headerNav {
+  &__items {
+    list-style: none;
+
+    > li {
+      font-size: 1.4rem;
+    }
+  }
+}

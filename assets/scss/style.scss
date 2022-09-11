@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@700&display=swap');
+
+@import "external/reset.scss";
+@import "article.scss";
+@import "footer.scss";
+@import "header.scss";
+@import "post.scss";
+@import "pagination.scss";
+@import "search.scss";
+@import "tags.scss";
+
+html {
+  font-size: 62.50%;
+}
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.main {
+  min-height: calc(100vh - 87px - 48.5px);
+}

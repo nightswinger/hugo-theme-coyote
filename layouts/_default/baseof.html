@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{- partial "head.html" . -}}
+  </head>
+  <body>
+    <!-- Code that all your templates share, like a header -->
+    {{- partial "header.html" . -}}
+    <div class="container">
+      <main class="main">
+        {{ block "main" . }}
+          <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+      </main>
+
+      {{- partialCached "footer.html" . }}
+    </div>
+  </body>
+</html>
