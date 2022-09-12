@@ -23,3 +23,15 @@ a {
 .main {
   min-height: calc(100vh - 87px - 48.5px);
 }
+.not-found {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12rem;
+
+  span {
+    font-size: 2.4rem;
+  }
+}
