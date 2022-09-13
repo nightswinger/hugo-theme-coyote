@@ -68,6 +68,14 @@
     margin-top: 1.5em;
   }
 
+  p > a {
+    color: #0f83fd;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   blockquote {
     font-size: 0.97em;
     margin: 1.4rem 0;
