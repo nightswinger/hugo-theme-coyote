@@ -3,7 +3,7 @@
 
 {{ template "_internal/google_analytics.html" . }}
 
-<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+<title>{{ if not .IsHome }}{{ if .Title }}{{ .Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
 
 {{ $sass := resources.Get "scss/style.scss" }}
 {{ $style := $sass | resources.ToCSS | minify | resources.Fingerprint "sha256" }}
