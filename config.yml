@@ -3,6 +3,15 @@ title: COYOTE
 paginate: 9
 theme: coyote
 
+# params:
+#   profile:
+#     enabled: true
+#     name: John Doe
+#     description: I've got something to tell you now, Walkman
+#   social:
+#     - name: github
+#       url: https://github.com/nightswinger/hugo-theme-coyote
+
 menu:
   main:
     - identifier: search
