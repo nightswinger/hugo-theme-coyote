@@ -1,0 +1,17 @@
+.profile {
+  &__inner {
+    padding: 3.2rem 1.6rem;
+    display: flex;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+  }
+
+  &__description {
+    color: #bababa;
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+}

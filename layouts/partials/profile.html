@@ -1,0 +1,19 @@
+<section class="profile">
+  {{- with site.Params.profile }}
+    {{ if .enabled }}
+    <div class="profile__inner">
+      <div class="profile__body">
+        <h3 class="profile__name">{{ .name }}</h3>
+        <p class="profile__description">{{ .description }}</p>
+        <div class="profile__social">
+          {{ range site.Params.social }}
+          <a href="{{ .url }}" target="_blank">
+            {{ partial "icons.html" . }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  {{- end }}
+</section>

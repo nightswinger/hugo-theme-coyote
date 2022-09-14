@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{- partial "profile.html" }}
+
   {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
   {{- $paginator := .Paginate $pages }}
 
