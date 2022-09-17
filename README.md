@@ -17,3 +17,8 @@ Then, add the theme to your site config:
 ```bash
 echo theme = \"coyote\" >> config.toml
 ```
+
+## Features
+
+* **Search** supported by [Fuse.js](https://github.com/krisk/Fuse)
+* **Google Analytics** supported
