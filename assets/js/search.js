@@ -48,3 +48,10 @@ input.addEventListener('keyup', (e) => {
     results.innerHTML = ''
   }
 })
+
+// Prevent search clears
+input.addEventListener('keydown', (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault()
+  }
+})
