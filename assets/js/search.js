@@ -4,7 +4,7 @@ const fuseOptions = {
   includeMatches: true,
   threshold: 0.0,
   tokenize:true,
-  location: 0,
+  ignoreLocation: true,
   distance: 100,
   maxPatternLength: 32,
   minMatchCharLength: 1,
