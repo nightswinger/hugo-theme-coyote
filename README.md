@@ -22,7 +22,7 @@ echo theme = \"coyote\" >> config.toml
 
 ### Add Search Page
 
-Add the following to your `config.yml`
+Add the following to your `config.toml`
 
 ```toml
 [outputs]
