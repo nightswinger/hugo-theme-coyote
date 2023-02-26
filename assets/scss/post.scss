@@ -187,6 +187,7 @@
 
 .post__tags {
   display: flex;
+  flex-flow: row wrap;
   gap: 8px;
   margin: 1.6rem 0;
 
