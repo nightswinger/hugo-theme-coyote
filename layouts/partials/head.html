@@ -1,17 +1,25 @@
-<meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 {{ template "_internal/google_analytics.html" . }}
 
-<title>{{ if not .IsHome }}{{ if .Title }}{{ .Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
+<title>
+  {{ if not .IsHome }}{{ if .Title }}{{ .Title }} - {{ end }}{{ end }}{{
+  .Site.Title }}
+</title>
 
-{{ $sass := resources.Get "scss/style.scss" }}
-{{ $style := $sass | resources.ToCSS | minify | resources.Fingerprint "sha256" }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $sass := resources.Get "scss/style.scss" }} {{ $style := $sass |
+resources.ToCSS | minify | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
-{{- if (eq .Layout "search") }}
-  {{ $fusejs := resources.Get "js/fuse.basic.min.js" }}
-  {{ $search := resources.Get "js/search.js" }}
-  {{ $js := slice $fusejs $search | resources.Concat "js/bundle.js" | resources.Fingerprint "sha512" }}
-  <script defer type="text/javascript" src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{- if (eq .Layout "search") }} {{ $fusejs := resources.Get
+"js/fuse.basic.min.js" }} {{ $search := resources.Get "js/search.js" }} {{ $js
+:= slice $fusejs $search | resources.Concat "js/bundle.js" |
+resources.Fingerprint "sha512" }}
+<script
+  defer
+  type="text/javascript"
+  src="{{ $js.Permalink }}"
+  integrity="{{ $js.Data.Integrity }}"
+></script>
 {{- end }}
